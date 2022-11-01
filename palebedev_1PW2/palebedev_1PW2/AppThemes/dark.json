@@ -1,0 +1,26 @@
+{
+  "secondColor": {
+    "red": 0.25,
+    "alpha": 1,
+    "blue": 0.25,
+    "green": 0.25
+  },
+  "strokeColor": {
+    "red": 0,
+    "alpha": 1,
+    "blue": 1,
+    "green": 1
+  },
+  "textColor": {
+    "red": 1,
+    "alpha": 1,
+    "blue": 1,
+    "green": 1
+  },
+  "backgroundColor": {
+    "red": 0,
+    "alpha": 1,
+    "blue": 0,
+    "green": 0
+  }
+}
