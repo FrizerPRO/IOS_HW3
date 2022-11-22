@@ -23,6 +23,7 @@ final class WelcomeViewController: UIViewController{
     var buttonsSV = UIStackView()
     var themePicker: ThemePickerViewController = ThemePickerViewController()
     var colorTheme: ColorTheme = ColorTheme(backgroundColor: .systemGray6, strokeColor: .black, secondColor: .white, textColor: .black)
+
     
     //С помощью это штуки вы можете выбрать тему приложения. ЧТобы добавить свою - закиньте свой файл в формате json в папку AppData в формаье тех файлов, которые уже там лежат. Назнание файла = название темы
     
@@ -105,6 +106,13 @@ final class WelcomeViewController: UIViewController{
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.impactOccurred()
     }
+    @objc
+    private func notesButtonPressed() {
+        let notesViewController = NotesViewController()
+        notesViewController.modalPresentationStyle = .overCurrentContext
+        let navCont = UINavigationController(rootViewController: notesViewController)
+        present(navCont, animated: true)
+    }
     /**animation of color change*/
     @objc
     private func changeColor(_ slider: ColorPaletteView) {
@@ -181,6 +189,7 @@ final class WelcomeViewController: UIViewController{
                                         button.widthAnchor).isActive = true
         return button
     }
+    
     /**Sets all menu buttons*/
     private func setupMenuButtons() {
         /**Color button**/
@@ -190,6 +199,9 @@ final class WelcomeViewController: UIViewController{
         colorTheme.AddView(view: colorsButton)
         /**Notes Button**/
         let notesButton = makeMenuButton(title: "📝")
+        notesButton.addTarget(self, action:
+                                #selector(notesButtonPressed), for: .touchUpInside)
+
         colorTheme.AddView(view: notesButton)
         
         /**News button**/

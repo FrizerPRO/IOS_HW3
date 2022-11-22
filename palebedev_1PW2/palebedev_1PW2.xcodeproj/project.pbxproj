@@ -17,6 +17,12 @@
 		E91268BF2910FC010070746D /* ChangeColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91268BE2910FC010070746D /* ChangeColorProtocol.swift */; };
 		E91268C12910FD330070746D /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91268C02910FD330070746D /* ChangeColor.swift */; };
 		E91268C5291165E50070746D /* ThemePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91268C4291165E50070746D /* ThemePickerViewController.swift */; };
+		E97651202920E80100731999 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976511F2920E80100731999 /* NotesViewController.swift */; };
+		E97651222920F21C00731999 /* ShortNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97651212920F21C00731999 /* ShortNote.swift */; };
+		E97651262920FDF400731999 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97651252920FDF400731999 /* NoteCell.swift */; };
+		E97651282921075A00731999 /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97651272921075A00731999 /* AddNoteCell.swift */; };
+		E976512A29210F7C00731999 /* AddNoteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976512929210F7C00731999 /* AddNoteDelegate.swift */; };
+		E976512E2923D17C00731999 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = E976512D2923D17C00731999 /* default.json */; };
 		E9D8CF5828E9734B00291AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8CF5728E9734B00291AF1 /* AppDelegate.swift */; };
 		E9D8CF5A28E9734B00291AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8CF5928E9734B00291AF1 /* SceneDelegate.swift */; };
 		E9D8CF5C28E9734B00291AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8CF5B28E9734B00291AF1 /* ViewController.swift */; };
@@ -37,6 +43,12 @@
 		E91268BE2910FC010070746D /* ChangeColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorProtocol.swift; sourceTree = "<group>"; };
 		E91268C02910FD330070746D /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 		E91268C4291165E50070746D /* ThemePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerViewController.swift; sourceTree = "<group>"; };
+		E976511F2920E80100731999 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		E97651212920F21C00731999 /* ShortNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNote.swift; sourceTree = "<group>"; };
+		E97651252920FDF400731999 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		E97651272921075A00731999 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
+		E976512929210F7C00731999 /* AddNoteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteDelegate.swift; sourceTree = "<group>"; };
+		E976512D2923D17C00731999 /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		E9D8CF5428E9734B00291AF1 /* palebedev_1PW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = palebedev_1PW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D8CF5728E9734B00291AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D8CF5928E9734B00291AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				E901FEBC28FF086100DFA87A /* ColorPaletteView.swift */,
+				E97651252920FDF400731999 /* NoteCell.swift */,
+				E97651272921075A00731999 /* AddNoteCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,8 +96,18 @@
 				E91268A6290EC93A0070746D /* ColorTheme.swift */,
 				E91268A8290EDBA00070746D /* Color.swift */,
 				E91268BE2910FC010070746D /* ChangeColorProtocol.swift */,
+				E97651212920F21C00731999 /* ShortNote.swift */,
+				E976512929210F7C00731999 /* AddNoteDelegate.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E976512C2923D17C00731999 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				E976512D2923D17C00731999 /* default.json */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		E9D8CF4B28E9734B00291AF1 = {
@@ -105,6 +129,7 @@
 		E9D8CF5628E9734B00291AF1 /* palebedev_1PW2 */ = {
 			isa = PBXGroup;
 			children = (
+				E976512C2923D17C00731999 /* Notes */,
 				E91268A5290EC9280070746D /* Models */,
 				E91268A4290EC7FE0070746D /* AppThemes */,
 				E901FEBB28FF081300DFA87A /* Views */,
@@ -125,6 +150,7 @@
 				E9D8CF5B28E9734B00291AF1 /* ViewController.swift */,
 				E9D8CF6C28E975D300291AF1 /* WelcomeViewController.swift */,
 				E91268C4291165E50070746D /* ThemePickerViewController.swift */,
+				E976511F2920E80100731999 /* NotesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D8CF6428E9734F00291AF1 /* LaunchScreen.storyboard in Resources */,
+				E976512E2923D17C00731999 /* default.json in Resources */,
 				E91268BD290F21FB0070746D /* neon.json in Resources */,
 				E91268BB290F21F40070746D /* dark.json in Resources */,
 				E9D8CF6128E9734F00291AF1 /* Assets.xcassets in Resources */,
@@ -218,13 +245,18 @@
 				E91268A9290EDBA00070746D /* Color.swift in Sources */,
 				E901FEC328FFE59700DFA87A /* UIView_Pin.swift in Sources */,
 				E91268BF2910FC010070746D /* ChangeColorProtocol.swift in Sources */,
+				E976512A29210F7C00731999 /* AddNoteDelegate.swift in Sources */,
 				E901FEBD28FF086100DFA87A /* ColorPaletteView.swift in Sources */,
 				E9D8CF6D28E975D300291AF1 /* WelcomeViewController.swift in Sources */,
 				E901FEC528FFE97500DFA87A /* UIColor_extension.swift in Sources */,
 				E91268C12910FD330070746D /* ChangeColor.swift in Sources */,
+				E97651202920E80100731999 /* NotesViewController.swift in Sources */,
 				E91268C5291165E50070746D /* ThemePickerViewController.swift in Sources */,
 				E9D8CF5828E9734B00291AF1 /* AppDelegate.swift in Sources */,
 				E9D8CF5A28E9734B00291AF1 /* SceneDelegate.swift in Sources */,
+				E97651282921075A00731999 /* AddNoteCell.swift in Sources */,
+				E97651222920F21C00731999 /* ShortNote.swift in Sources */,
+				E97651262920FDF400731999 /* NoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
