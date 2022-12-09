@@ -206,6 +206,7 @@ final class WelcomeViewController: UIViewController{
         
         /**News button**/
         let newsButton = makeMenuButton(title: "📰")
+        newsButton.addTarget(self, action: #selector(newsButtonPressed), for: .touchUpInside)
         colorTheme.AddView(view: newsButton)
         
         
@@ -219,6 +220,11 @@ final class WelcomeViewController: UIViewController{
         buttonsSV.pinBottom(to:
                                 self.view.safeAreaLayoutGuide.bottomAnchor, 24)
         
+    }
+    @objc
+    private func newsButtonPressed() {
+    let newsListController = NewsListViewController()
+    navigationController?.pushViewController(newsListController, animated: true)
     }
     
     private func setupColorControlSV() {

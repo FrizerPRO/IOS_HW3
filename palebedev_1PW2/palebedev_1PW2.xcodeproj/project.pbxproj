@@ -17,6 +17,12 @@
 		E91268BF2910FC010070746D /* ChangeColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91268BE2910FC010070746D /* ChangeColorProtocol.swift */; };
 		E91268C12910FD330070746D /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91268C02910FD330070746D /* ChangeColor.swift */; };
 		E91268C5291165E50070746D /* ThemePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91268C4291165E50070746D /* ThemePickerViewController.swift */; };
+		E9551217294267B4000137C6 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9551216294267B4000137C6 /* NewsListViewController.swift */; };
+		E955121929426F4F000137C6 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955121829426F4F000137C6 /* NewsCell.swift */; };
+		E955121B29427335000137C6 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955121A29427335000137C6 /* NewsViewModel.swift */; };
+		E955121E294276D1000137C6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955121D294276D1000137C6 /* APIService.swift */; };
+		E95512202943332A000137C6 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955121F2943332A000137C6 /* ArticleModel.swift */; };
+		E955122229433C56000137C6 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955122129433C56000137C6 /* NewsViewController.swift */; };
 		E97651202920E80100731999 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976511F2920E80100731999 /* NotesViewController.swift */; };
 		E97651222920F21C00731999 /* ShortNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97651212920F21C00731999 /* ShortNote.swift */; };
 		E97651262920FDF400731999 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97651252920FDF400731999 /* NoteCell.swift */; };
@@ -43,6 +49,12 @@
 		E91268BE2910FC010070746D /* ChangeColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorProtocol.swift; sourceTree = "<group>"; };
 		E91268C02910FD330070746D /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 		E91268C4291165E50070746D /* ThemePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerViewController.swift; sourceTree = "<group>"; };
+		E9551216294267B4000137C6 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		E955121829426F4F000137C6 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		E955121A29427335000137C6 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		E955121D294276D1000137C6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E955121F2943332A000137C6 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		E955122129433C56000137C6 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		E976511F2920E80100731999 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		E97651212920F21C00731999 /* ShortNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNote.swift; sourceTree = "<group>"; };
 		E97651252920FDF400731999 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
@@ -77,6 +89,7 @@
 				E901FEBC28FF086100DFA87A /* ColorPaletteView.swift */,
 				E97651252920FDF400731999 /* NoteCell.swift */,
 				E97651272921075A00731999 /* AddNoteCell.swift */,
+				E955121829426F4F000137C6 /* NewsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,8 +111,18 @@
 				E91268BE2910FC010070746D /* ChangeColorProtocol.swift */,
 				E97651212920F21C00731999 /* ShortNote.swift */,
 				E976512929210F7C00731999 /* AddNoteDelegate.swift */,
+				E955121A29427335000137C6 /* NewsViewModel.swift */,
+				E955121F2943332A000137C6 /* ArticleModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E955121C294276B3000137C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E955121D294276D1000137C6 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E976512C2923D17C00731999 /* Notes */ = {
@@ -129,6 +152,7 @@
 		E9D8CF5628E9734B00291AF1 /* palebedev_1PW2 */ = {
 			isa = PBXGroup;
 			children = (
+				E955121C294276B3000137C6 /* Services */,
 				E976512C2923D17C00731999 /* Notes */,
 				E91268A5290EC9280070746D /* Models */,
 				E91268A4290EC7FE0070746D /* AppThemes */,
@@ -151,6 +175,8 @@
 				E9D8CF6C28E975D300291AF1 /* WelcomeViewController.swift */,
 				E91268C4291165E50070746D /* ThemePickerViewController.swift */,
 				E976511F2920E80100731999 /* NotesViewController.swift */,
+				E9551216294267B4000137C6 /* NewsListViewController.swift */,
+				E955122129433C56000137C6 /* NewsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -243,15 +269,21 @@
 				E9D8CF5C28E9734B00291AF1 /* ViewController.swift in Sources */,
 				E9D8CF7228E9791900291AF1 /* CALayer_Shadow.swift in Sources */,
 				E91268A9290EDBA00070746D /* Color.swift in Sources */,
+				E955121E294276D1000137C6 /* APIService.swift in Sources */,
+				E955121B29427335000137C6 /* NewsViewModel.swift in Sources */,
+				E9551217294267B4000137C6 /* NewsListViewController.swift in Sources */,
 				E901FEC328FFE59700DFA87A /* UIView_Pin.swift in Sources */,
 				E91268BF2910FC010070746D /* ChangeColorProtocol.swift in Sources */,
 				E976512A29210F7C00731999 /* AddNoteDelegate.swift in Sources */,
 				E901FEBD28FF086100DFA87A /* ColorPaletteView.swift in Sources */,
 				E9D8CF6D28E975D300291AF1 /* WelcomeViewController.swift in Sources */,
+				E955121929426F4F000137C6 /* NewsCell.swift in Sources */,
 				E901FEC528FFE97500DFA87A /* UIColor_extension.swift in Sources */,
 				E91268C12910FD330070746D /* ChangeColor.swift in Sources */,
+				E955122229433C56000137C6 /* NewsViewController.swift in Sources */,
 				E97651202920E80100731999 /* NotesViewController.swift in Sources */,
 				E91268C5291165E50070746D /* ThemePickerViewController.swift in Sources */,
+				E95512202943332A000137C6 /* ArticleModel.swift in Sources */,
 				E9D8CF5828E9734B00291AF1 /* AppDelegate.swift in Sources */,
 				E9D8CF5A28E9734B00291AF1 /* SceneDelegate.swift in Sources */,
 				E97651282921075A00731999 /* AddNoteCell.swift in Sources */,
